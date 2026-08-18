@@ -1,5 +1,5 @@
-name: ai_doctor_app
-description: "AI Doctor App - Respiratory Diseases Diagnosis"
+name: osint_tools
+description: "Complete OSINT + Radio Jamming + Free Tools Collection"
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -14,12 +14,16 @@ dependencies:
   http: ^1.1.0
   provider: ^6.0.0
   shared_preferences: ^2.2.0
-  flutter_dotenv: ^5.1.0
   intl: ^0.19.0
   uuid: ^4.0.0
-  lottie: ^2.6.0
   google_fonts: ^6.1.0
-  fl_chart: ^0.64.0
+  qr_flutter: ^4.1.0
+  permission_handler: ^11.4.0
+  flutter_barcode_scanner: ^2.0.0
+  crypto: ^3.1.0
+  pointycastle: ^3.7.0
+  url_launcher: ^6.1.0
+  share_plus: ^7.2.0
 
 dev_dependencies:
   flutter_test:
@@ -30,4 +34,3 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
-    - .env

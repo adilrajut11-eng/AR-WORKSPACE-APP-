@@ -1,97 +1,105 @@
-# 🏥 AI Doctor App - Respiratory Diseases Diagnosis
+# 🔓 OSINT + Radio Jamming + Free Tools Suite
 
-An AI-powered Flutter mobile app for diagnosing respiratory diseases using OpenAI API.
+**Complete All-in-One Security & OSINT Toolkit**
 
-## ✨ Features
+## 🎯 Features
 
-✅ **AI-Powered Diagnosis** - Uses ChatGPT for respiratory disease diagnosis  
-✅ **Symptom Checker** - Select from common respiratory symptoms  
-✅ **Confidence Score** - AI provides confidence percentage  
-✅ **Recommendations** - Get actionable health recommendations  
-✅ **Medicine Suggestions** - AI recommends common medicines  
-✅ **Diagnosis History** - Track all previous diagnoses  
-✅ **Beautiful UI** - Modern Material Design 3  
-✅ **Dark Mode** - Full dark mode support  
+### 🔒 OSINT Tools
+✅ **IP Address Analyzer** - Detailed IP information (Public/Private, Binary, Hex, Decimal)  
+✅ **Domain Analyzer** - Extract domain info, TLD, subdomains  
+✅ **Email Analyzer** - Parse email, find provider, validate  
+✅ **Phone Number Analyzer** - Detect country, validate format  
+✅ **MAC Address Validator** - Check MAC validity, extract OUI  
+
+### 📡 Radio & Signal Tools
+✅ **Frequency Generator** - FM, AM, WiFi, Cellular, Bluetooth frequencies  
+✅ **Signal Strength Analyzer** - DBm to signal quality conversion  
+✅ **Spectrum Analysis** - Peak detection, noise floor analysis  
+✅ **Frequency Hopping** - Bluetooth FHSS simulation  
+✅ **Noise Generator** - White noise simulation  
+
+### 🛠️ Free Utility Tools
+✅ **Password Generator** - Strong password generation  
+✅ **Password Strength Checker** - Real-time strength analysis  
+✅ **Text Analyzer** - Character/word/line/paragraph count  
+✅ **Email Validator** - Check email validity  
+✅ **URL Validator** - Verify URLs  
+✅ **IP Validator** - Validate IP format  
+✅ **Color Converter** - HEX to RGB/HSL conversion  
+
+### 🔐 Cryptography Tools
+✅ **Hash Generators** - MD5, SHA1, SHA256, SHA512  
+✅ **Base64 Encoder/Decoder** - Encode/decode text  
+✅ **Caesar Cipher** - Encrypt/decrypt with shift  
+✅ **ROT13** - Quick text rotation  
 
 ## 📦 Installation
 
-### Prerequisites
-- Flutter 3.0+
-- Dart 3.0+
-- OpenAI API Key
-
-### Quick Start
-
 ```bash
-# Clone repository
+# Clone repo
 git clone https://github.com/adilrajut11-eng/AR-WORKSPACE-APP-.git
 cd AR-WORKSPACE-APP-
 
 # Install dependencies
 flutter pub get
 
-# Setup API Key
-cp .env.example .env
-# Edit .env and add your OpenAI API Key
-
-# Run
+# Run app
 flutter run
 ```
 
-## 🔑 API Configuration
+## 📱 Usage
 
-1. Get API Key from [OpenAI](https://platform.openai.com/api-keys)
-2. Add to `.env`:
-   ```
-   OPENAI_API_KEY=sk-your-key-here
-   ```
+### OSINT Tab
+1. Select analysis type (IP, Domain, Email, Phone, MAC)
+2. Enter your data
+3. Click Analyze
+4. View results instantly
 
-## 📱 Screens
+### Tools Tab
+1. Click on any tool (Password, Validator, Analyzer, etc.)
+2. Enter input data
+3. Get instant results
+4. Copy results with one click
 
-### 1. Symptoms Screen
-- Select from common respiratory symptoms
-- Add multiple symptoms
-- Clear selection
+### Radio Tab
+1. Select frequency type
+2. Adjust frequency slider
+3. Click Analyze
+4. View signal characteristics
 
-### 2. Diagnosis Screen
-- AI analyzes symptoms
-- Shows confidence percentage
-- Provides detailed diagnosis
-- Lists recommendations
-- Shows suggested medicines
-- Alerts if doctor needed
+### Crypto Tab
+1. Select hash/encoding type
+2. Enter text
+3. Get result instantly
+4. Copy with one click
 
-### 3. History Screen
-- View all past diagnoses
-- Filter by disease
-- See confidence scores
-- Track symptoms over time
-
-## 🏗️ Project Structure
+## 🔧 Project Structure
 
 ```
-AR-WORKSPACE-APP-/
+OSINT_TOOLS/
 ├── lib/
 │   ├── main.dart
-│   ├── models/
-│   │   └── symptom.dart
-│   ├── providers/
-│   │   └── doctor_provider.dart
 │   ├── screens/
 │   │   ├── splash_screen.dart
 │   │   ├── home_screen.dart
-│   │   ├── symptoms_screen.dart
-│   │   ├── diagnosis_screen.dart
-│   │   └── history_screen.dart
-│   └── services/
-│       └── ai_service.dart
+│   │   ├── osint_screen.dart
+│   │   ├── tools_screen.dart
+│   │   ├── radio_screen.dart
+│   │   └── crypto_screen.dart
+│   ├── services/
+│   │   ├── osint_service.dart
+│   │   ├── radio_service.dart
+│   │   ├── tools_service.dart
+│   │   └── crypto_service.dart
+│   └── providers/
+│       └── tool_provider.dart
 ├── pubspec.yaml
-└── .env.example
+└── README.md
 ```
 
 ## 🚀 Building
 
-### Android
+### Android APK
 ```bash
 flutter build apk --release
 ```
@@ -101,30 +109,51 @@ flutter build apk --release
 flutter build ios --release
 ```
 
-## 💡 Usage
+## ⚙️ Technologies
+- **Flutter** - UI Framework
+- **Dart** - Programming Language
+- **Provider** - State Management
+- **Crypto** - Cryptography
+- **SharedPreferences** - Local Storage
 
-1. **Select Symptoms** - Choose symptoms from the list
-2. **Get Diagnosis** - AI analyzes and provides diagnosis
-3. **Review Results** - Check confidence, recommendations, medicines
-4. **Check History** - View all past diagnoses
+## 📝 Features Breakdown
 
-## ⚠️ Important
+### OSINT Analysis
+- Extract IP details (type, binary, hex, decimal)
+- Parse domain structure
+- Analyze email addresses
+- Validate phone numbers
+- Check MAC addresses
 
-- **NOT a substitute for professional medical advice**
-- Always consult with a doctor for serious conditions
-- This is an educational tool
-- Keep API key secure
-- Monitor API usage and costs
+### Radio Simulation
+- Frequency range calculator
+- Signal strength analysis
+- Bandwidth estimation
+- Modulation types
+- Channel counting
+
+### Utilities
+- Password security checker
+- Text statistics
+- Email/URL/IP validation
+- Color format conversion
+- Hash generation
+
+### Encryption
+- Multiple hash algorithms
+- Base64 encoding/decoding
+- Caesar cipher
+- ROT13 encoding
 
 ## 📄 License
 
-MIT License - Use freely
+MIT License - Free to use!
 
 ## 👨‍💻 Author
 
-**Adil Rajut**
-- GitHub: [@adilrajut11-eng](https://github.com/adilrajut11-eng)
+**Adil Rajut**  
+GitHub: [@adilrajut11-eng](https://github.com/adilrajut11-eng)
 
 ---
 
-**Made with ❤️ for better healthcare**
+**Built with ❤️ for Security & Open-Source Community**

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -45,14 +44,14 @@ class _SplashScreenState extends State<SplashScreen> {
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
-                  Icons.medical_services,
+                  Icons.security,
                   size: 60,
                   color: Colors.white,
                 ),
               ),
               const SizedBox(height: 30),
               Text(
-                'AI Doctor',
+                '🔓 OSINT Tools',
                 style: Theme.of(context).textTheme.headlineLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -60,20 +59,9 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                'Respiratory Health',
+                'All in One Toolkit',
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: Colors.white.withOpacity(0.8),
-                ),
-              ),
-              const SizedBox(height: 50),
-              SizedBox(
-                width: 30,
-                height: 30,
-                child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(
-                    Colors.white.withOpacity(0.8),
-                  ),
-                  strokeWidth: 2,
                 ),
               ),
             ],
